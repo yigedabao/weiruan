@@ -1,0 +1,405 @@
+@charset "utf-8";
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+@mixin common($h, $w:1115px) {
+    width: $w;
+    margin: 0 auto;
+    height: $h;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+#header_top {
+    @include common(34px,
+    100%);
+    background: #0067b8;
+    a {
+        display: block;
+        @include common(34px,
+        100%);
+        color: white;
+        text-align: center;
+        line-height: 34px;
+        font-size: 14px;
+    }
+}
+
+#header_wrap {
+    @include common(50px,
+    100%);
+    background: #f5f5f5;
+}
+
+#header {
+    @include common(50px);
+    background: #f5f5f5;
+    line-height: 50px;
+    position: relative;
+    img {
+        display: block;
+        float: left;
+        margin-top: 14px;
+    }
+    a:nth-of-type(2) {
+        font-size: 14px;
+        margin-left: 60px;
+    }
+    input {
+        @include common(30px,
+        345px);
+        box-sizing: border-box;
+        border: 1px solid #707070;
+        text-indent: 5px;
+        position: absolute;
+        top: 10px;
+        right: 125px;
+        background: #f5f5f5;
+    }
+    span {
+        font-family: 'iconfont';
+        font-size: 20px;
+    }
+    a:nth-of-type(3) {
+        span {
+            position: absolute;
+            right: 130px;
+            font-size: 24px;
+        }
+    }
+    a:nth-of-type(4) {
+        span {
+            position: absolute;
+            right: 85px;
+        }
+    }
+    a:nth-of-type(5) {
+        font-size: 14px;
+        position: absolute;
+        right: 20px;
+    }
+    i {
+        font-style: inherit;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}
+
+#nav_wrap {
+    @include common(71px,
+    100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#nav {
+    @include common(71px);
+    overflow: hidden;
+    ul {
+        float: left;
+        li {
+            a {
+                color: #0067b8;
+                font-size: 14px;
+            }
+            float: left;
+            line-height: 70px;
+            margin-right: 50px;
+            position: relative;
+        }
+        li:nth-of-type(1) {
+            a {
+                color: #333333;
+                font-size: 16px;
+            }
+        }
+        li:nth-of-type(2) {
+            i {
+                box-sizing: border-box;
+                font-style: inherit;
+                position: absolute;
+                top: 6px;
+            }
+            ul {
+                @include common(278px,
+                250px);
+                background: white;
+                position: absolute;
+                left: -20px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-top: none;
+                display: none; //一会记得删!!
+                li {
+                    @include common(54px,
+                    248px);
+                    line-height: 54px;
+                    text-indent: 20px;
+                    a {
+                        font-size: 14px;
+                        color: #333;
+                    }
+                }
+            }
+        }
+        li:nth-of-type(3) {
+            i {
+                box-sizing: border-box;
+                font-style: inherit;
+                position: absolute;
+                top: 6px;
+            }
+            ul {
+                @include common(278px,
+                250px);
+                background: white;
+                position: absolute;
+                left: -20px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-top: none;
+                display: none; //一会记得删!!
+                li {
+                    @include common(54px,
+                    248px);
+                    line-height: 54px;
+                    text-indent: 20px;
+                    a {
+                        font-size: 14px;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+    .nav_right {
+        float: right;
+        line-height: 70px;
+        a {
+            color: #0067b8;
+            font-size: 12px;
+        }
+        span {
+            color: #333333;
+            font-size: 12px;
+            margin: 0 15px 0 30px;
+        }
+    }
+}
+
+#banner {
+    @include common(426px);
+    position: relative;
+    span {
+        @include common(50px,
+        50px);
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .5);
+        z-index: 9;
+        text-align: center;
+        line-height: 50px;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 24px;
+    }
+    ol {
+        @include common(10px,
+        60px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15px;
+        display: flex;
+        li {
+            @include common(8px,
+            8px);
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    }
+    .button_left {
+        left: 0;
+    }
+    .button_right {
+        right: 0;
+    }
+    img {
+        @include common(426px);
+        position: absolute;
+    }
+}
+
+#mainContainer {
+    @include common(320px);
+    margin-top: 10px;
+    ul {
+        @include common(320px,
+        252px);
+        background: #0067b8;
+        text-align: center;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: space-around;
+        li {
+            a {
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+        li:nth-of-type(1) {
+            padding-top: 4%;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+        }
+        li:nth-of-type(9) {
+            padding-bottom: 6%;
+        }
+    }
+    .mainContainer_right {
+        @include common(320px,
+        818px);
+        float: right;
+        ul {
+            @include common(320px,
+            818px);
+            flex-direction: row;
+            background: white;
+            text-align: left;
+            justify-content: space-between;
+            li {
+                padding: 0;
+                a {
+                    color: #000000;
+                    font-weight: 100;
+                    font-size: 16px;
+                    img {
+                        display: block;
+                        @include common(143px,
+                        262px);
+                        margin: 0;
+                    }
+                    p {
+                        @include common(90px,
+                        262px);
+                        margin: 10px 0 5px 0;
+                    }
+                    .more {
+                        color: #0067b8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#sliderList {
+    @include common(377px);
+    margin-top: 37px;
+    .list_top {
+        @include common(60px);
+        color: #333;
+        font-size: 30px;
+        line-height: 60px;
+        border-bottom: 1px solid #000000;
+    }
+    .list_main {
+        @include common(316px);
+        position: relative;
+        ul {
+            @include common(306px,
+            1021px);
+            position: absolute;
+            bottom: 0;
+            left: 62px;
+            display: flex;
+            justify-content: space-between;
+            li {
+                img {
+                    display: block;
+                    @include common(151px,
+                    202px);
+                }
+                h4 {
+                    margin-top: 15px;
+                    color: #333;
+                }
+                p{
+                    font-size: 13px;
+                    color:#666;
+                    line-height: 30px;
+                }
+                span{
+                    display: block;
+                    margin-top: 35px;
+                    line-height: 24px;
+                    color: red;
+                }
+            }
+        }
+    }
+}

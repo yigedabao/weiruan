@@ -421,14 +421,13 @@ a {
 #indexList {
   width: 1115px;
   margin: 0 auto;
-  height: 15px;
+  height: 20px;
 }
 
 #productChannels {
   width: 1115px;
   margin: 0 auto;
-  height: 392px;
-  background: yellow;
+  height: 404px;
 }
 #productChannels .Channels_top {
   width: 1115px;
@@ -438,8 +437,206 @@ a {
   font-size: 30px;
   line-height: 60px;
 }
+#productChannels .bg_1 {
+  background: url(../img/Surface00.png) no-repeat;
+  background-position: 0 145px;
+}
+#productChannels .bg_2 {
+  background: url(../img/Offic00.png) no-repeat;
+  background-position: 18px 115px;
+}
+#productChannels .bg_3 {
+  background: url(../img/Xbox00.jpg) no-repeat;
+  background-position: 15px 85px;
+}
+#productChannels .bg_4 {
+  background: url(../img/Peijian00.png) no-repeat;
+  background-position: 0 145px;
+}
 #productChannels .inner {
-  background: url(../img/Surface00.png);
+  width: 278px;
+  margin: 0 auto;
+  height: 342px;
+  border: 1px solid #e4e4e4;
+  float: left;
+  box-sizing: border-box;
+  padding: 15px;
+}
+#productChannels .inner p {
+  font-size: 18px;
+  line-height: 28px;
+}
+#productChannels .inner a {
+  font-size: 14px;
+  color: #5E5E5E;
+}
+#productChannels .inner_2 {
+  width: 278px;
+  margin: 0 auto;
+  height: 342px;
+  border: 1px solid #e4e4e4;
+  border-left: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  float: left;
+}
+#productChannels .inner_2 img {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  height: 154px;
+}
+#productChannels .inner_2 h3 {
+  margin-top: 8%;
+  color: #333;
+  font-size: 16px;
+  color: black;
+}
+#productChannels .inner_2 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  overflow: hidden;
+  margin: 3% 0 14% 0;
+}
+#productChannels .inner_2 span {
+  color: #da3b01;
+  font-size: 13px;
+  line-height: 18px;
+}
+#productChannels .inner_2 span strong {
+  font-size: 18px;
+}
+
+#indexSecond {
+  width: 100%;
+  margin: 0 auto;
+  height: 45px;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  height: 97px;
+  border-top: 1px solid #CCCCCC;
+}
+#content ul {
+  width: 1115px;
+  margin: 0 auto;
+  height: 97px;
+  display: flex;
+  flex-direction: row;
+}
+#content ul li:nth-of-type(6) {
+  border: 0;
+}
+#content ul li {
+  height: 54px;
+  flex: 1;
+  border-right: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 21px 0;
+}
+#content ul li a {
+  text-align: center;
+}
+#content ul li a .tubiao {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+#content ul li a .jlt_1 {
+  background: url(../img/jingling.png) no-repeat left top;
+}
+#content ul li a .jlt_2 {
+  background: url(../img/jingling.png) no-repeat -45px top;
+}
+#content ul li a .jlt_3 {
+  background: url(../img/jingling.png) no-repeat -89px top;
+}
+#content ul li a .jlt_4 {
+  background: url(../img/jingling.png) no-repeat -138px top;
+}
+#content ul li a .jlt_5 {
+  background: url(../img/jingling.png) no-repeat -188px top;
+}
+#content ul li a .jlt_6 {
+  background: url(../img/jingling.png) no-repeat -236px top;
+}
+#content ul li a p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+  margin-top: 5px;
+}
+
+#footer-wrap {
+  width: 100%;
+  margin: 0 auto;
+  height: 743px;
+  background: #eeeeee;
+}
+#footer-wrap #footer {
+  width: 1115px;
+  margin: 0 auto;
+  height: 743px;
+  background: #EEEEEE;
+}
+#footer-wrap #footer .footer_top {
+  border-bottom: 1px solid #737373;
+  color: #666;
+  padding: 15px 0;
+  line-height: 36px;
+}
+#footer-wrap #footer .footer_top span {
+  line-height: 36px;
+  color: #666666;
+}
+#footer-wrap #footer .footer_top .inpbox {
+  display: inline-block;
+  height: 30px;
+  font-size: 0;
+  vertical-align: middle;
+  margin: 0 14px;
+  box-sizing: border-box;
+}
+#footer-wrap #footer .footer_top .inpbox input {
+  font-size: 14px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  width: 220px;
+  padding: 0 5px;
+}
+#footer-wrap #footer .footer_top .inpbox .btn {
+  display: inline-block;
+  width: 80px;
+  text-decoration: none;
+  color: #fff;
+  text-decoration: center;
+  line-height: 30px;
+  background-color: #0067b8;
+  font-size: 14px;
+  margin-left: -1px;
+  text-align: center;
+  border: none;
+}
+#footer-wrap #footer .footer_top a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #0d71a6;
+  text-decoration: underline;
+}
+#footer-wrap #footer_list {
+  width: 1115px;
+  margin: 0 auto;
+  height: 585px;
+  margin-top: 30px;
+}
+#footer-wrap #footer_list li {
+  height: 368px;
+  background: yellowc;
 }
 
 /*# sourceMappingURL=style.css.map */

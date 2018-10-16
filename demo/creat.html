@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>创建账户</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body class="create">
+		<div id="create_maddle_wrap">
+			<div id="create_maddle">
+				<div>
+					<img src="https://account.azureedge.net/images/microsoft_logo_7lyNn7YkjJOP0NwZNw6QvQ2.svg" />
+					<h2>创建账户</h1>
+					<div class="create_input_1">
+						<input type="text" name="email" id="email" placeholder="someone@example.com" />
+						<a href="#" class="create_btn_1">改为使用电话号码</a>
+						<a href="#" class="create_btn_2">获取新的电子邮件地址</a>
+					</div>
+					<div class="create_input_2">
+						<select name="create_telfrom" class="create_telfrom">
+							<option >中国(+86)</option>
+						</select>
+						<input type="text" name="create_tel" id="create_tel" placeholder="电话号码" />
+						<a href="#" class="create_btn_3">改为使用电子邮件</a>
+					</div>
+					<div class="create_input_3">
+						<div class="ci3_border">
+						<input type="text" name="setemail" id="setemail" placeholder="新建电子邮件" />
+						<select name="email_houzhui" class="email_houzhui">
+							<option>@outlook.com</option>
+							<option>@hotmail.com</option>
+						</select>						
+						<a href="#" class="create_btn_1">改为使用电话号码</a>
+						<a href="#" class="create_btn_3">改为使用电子邮件</a>
+						</div>
+					</div>
+					<button class="next">下一步</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/index.js"></script>
+</html>

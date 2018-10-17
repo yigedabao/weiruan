@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	</head>
 
-	<body>
+	<body class="login_1">
 		<div id="header_top">
 			<a href="#">
 				新品预售 | 全新 Surface Pro 6，Surface Laptop 2 集结登陆。<u>立即预订></u>
@@ -117,103 +117,481 @@
 			</div>
 		</div>
 		<!------------------------------------------->
-		<div id="current_pos"><!--当前位置-->
-			<a href="">微软官方商城</a> >
-			<a href="">虚拟与混合现实</a> >
-			<a href="">Microsoft HoloLens</a> 
-		</div>
-		<div id="banner_xq">
-			<div class="banner_xq_left">
-				<div class="big_pic">
-					<img src="../img/bigvr_1.png"/>
-					<img src="../img/bigvr_2.png"/>
-					<img src="../img/bigvr_3.png"/>
-					<img src="../img/bigvr_4.png"/>
-				</div>
-				<div class="small_pic">
-					<a href="#"><img src="../img/bigvr_1.png"/></a>
-					<a href="#"><img src="../img/bigvr_2.png"/></a>
-					<a href="#"><img src="../img/bigvr_3.png"/></a>
-					<a href="#"><img src="../img/bigvr_4.png"/></a>
-				</div>
-				<div class="referral"><!--介绍-->
-					<p>开发者版本是特殊限定版本，专为有意从事 Microsoft HoloLens 应用开发的开发者用户提供，使用场景必须与产品应用开发相关。与商业套件相比，为了帮助降低开发成本，开发者版本提供了优惠的价格方案，但同时也相应减少了相关的服务内容。</p>
-				</div>
+		<div id="current_pos_wrap">
+			<div id="current_pos">
+				<!--当前位置-->
+				<a href="../index.html">微软官方商城</a> >
+				<a href="https://www.microsoftstore.com.cn/c/vr-and-mr">虚拟与混合现实</a> >
+				<a href="#">Microsoft HoloLens</a>
 			</div>
-			<div class="banner_xq_right">
-				<div class="kongbai"></div><!--空白-->
-				<h1>Microsoft HoloLens<br/>开发者版本</h1>
-				<div class="xq_price"><!--价格-->
-					<span class="shoujia">售价：</span>
-					<span class="rmb">¥ 23,488</span>
-					<div class="evaluate"><!--评价-->
-						<img src="../img/stars.png"/>
-						（<span class="num">24</span>条评论）
+		</div>
+		<div id="banner_xq_wrap">
+
+			<div id="banner_xq">
+				<div class="banner_xq_left">
+					<div class="big_pic" id="box">
+						<div id="mark"></div>
+						<div id="small_box"></div>
+						<img class="img" src="../img/bigvr_1.png" />
+						<img class="img" src="../img/bigvr_2.png" />
+						<img class="img" src="../img/bigvr_3.png" />
+						<img class="img" src="../img/bigvr_4.png" />
+					</div>
+					<div id="eye">
+						<img class="img2" src="../img/bigvr_1.png" />
+						<img class="img2" src="../img/bigvr_2.png" />
+						<img class="img2" src="../img/bigvr_3.png" />
+						<img class="img2" src="../img/bigvr_4.png" />
+					</div>
+					<div class="small_pic">
+						<a href="javascript:;"><img src="../img/bigvr_1.png" /></a>
+						<a href="javascript:;"><img src="../img/bigvr_2.png" /></a>
+						<a href="javascript:;"><img src="../img/bigvr_3.png" /></a>
+						<a href="javascript:;"><img src="../img/bigvr_4.png" /></a>
+					</div>
+					<div class="referral">
+						<!--介绍-->
+						<p>开发者版本是特殊限定版本，专为有意从事 Microsoft HoloLens 应用开发的开发者用户提供，使用场景必须与产品应用开发相关。与商业套件相比，为了帮助降低开发成本，开发者版本提供了优惠的价格方案，但同时也相应减少了相关的服务内容。</p>
 					</div>
 				</div>
-				<p>Microsoft HoloLens 开发者版本只针对开发者用户，并且本设备受<a href="https://www.microsoft.com/zh-cn/hololens/support/warranty">使用条款</a>的约束。通过购买，您同意不转售该设备。所有销售均为最终、不可退换货。您的设备不享受保修。本设备不适于小于13岁的儿童使用。通过购买，您同意<a href="https://www.microsoft.com/en-us/Useterms/OEM/Windows/10Mobile/UseTerms_OEM_Windows_10Mobile_ChineseSimplified.htm">软件许可条款</a></p>
-				<h5>请选择配置</h5>
-				<div class="options"><!--选择-->
-					<a href="javascript:;" class="options_btn options_1">
-						开发者版本<span> ¥ 23,488</span>
-					</a>
-					<a href="javascript:;" class="options_btn options_2">
-						商业套件<span> ¥ 39,188</span>
-					</a>
-				</div>
-				<div class="xq_buy">
-					<a href="">申请购买</a>
+				<div class="banner_xq_right">
+					<div class="kongbai"></div>
+					<!--空白-->
+					<h1>Microsoft HoloLens<br/>开发者版本</h1>
+					<div class="xq_price">
+						<!--价格-->
+						<span class="shoujia">售价：</span>
+						<span class="rmb">¥ 23,488</span>
+						<div class="evaluate">
+							<!--评价-->
+							<img src="../img/stars.png" /> （
+							<span class="num">24</span>条评论）
+						</div>
+					</div>
+					<p>Microsoft HoloLens 开发者版本只针对开发者用户，并且本设备受
+						<a href="https://www.microsoft.com/zh-cn/hololens/support/warranty">使用条款</a>的约束。通过购买，您同意不转售该设备。所有销售均为最终、不可退换货。您的设备不享受保修。本设备不适于小于13岁的儿童使用。通过购买，您同意
+						<a href="https://www.microsoft.com/en-us/Useterms/OEM/Windows/10Mobile/UseTerms_OEM_Windows_10Mobile_ChineseSimplified.htm">软件许可条款</a>
+					</p>
+					<h5>请选择配置</h5>
+					<div class="options">
+						<!--选择-->
+						<a href="javascript:;" class="options_btn options_1">
+							开发者版本<span> ¥ 23,488</span>
+						</a>
+						<a href="javascript:;" class="options_btn options_2">
+							商业套件<span> ¥ 39,188</span>
+						</a>
+					</div>
+					<div class="xq_buy">
+						<a href="">申请购买</a>
+					</div>
 				</div>
 			</div>
-		</div>	
-		<div id="stairs"><!--楼梯-->
-			<ul>
-				<li><a href="#">主要特征</a></li>
-				<li><a href="#">包装清单</a></li>
-				<li><a href="#">技术规格</a></li>
-				<li><a href="#">常见问题</a></li>
-				<li><a href="#">顾客评价</a></li>
-			</ul>
+		</div>
+		<div id="stairs_wrap">	
+			<div id="stairs">
+				<!--楼梯-->
+				<ul>
+					<li>
+						<a href="javascript:;">主要特征</a>
+					</li>
+					<li>
+						<a href="javascript:;">包装清单</a>
+					</li>
+					<li>
+						<a href="javascript:;">技术规格</a>
+					</li>
+					<li>
+						<a href="javascript:;">常见问题</a>
+					</li>
+					<li>
+						<a href="javascript:;">顾客评价</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="xq_img1_wrap">
-		<div class="xq_img1">
-			<img src="../img/xq_img1.png"/>
+			<div class="xq_img1">
+				<img src="../img/xq_img1.png" />
+			</div>
 		</div>
-		</div>
-		<div class="xq_img2">
+		<div class="xq_img2 louti">
 			<h4>让科学幻想变成科学现实</h4>
 			<p>Microsoft HoloLens 由协同实现全息计算的特殊组件构成： 通过高级传感器以锁步方式运行的光学系统、让每秒处理大量数据的工作变得轻松的 HPU（全息处理单元）。所有这些组件以及其他硬件，让你实现自由移动并与全息影像互动。</p>
 		</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
+		<div class="xq_img3">
+			<h4>领先一步</h4>
+			<p>访问
+				<a href="https://developer.microsoft.com/zh-cn/windows">Windows 开发人员中心</a>，下载文档，加入论坛，查阅规格参数，并从今天起为 Microsoft HoloLens 进行开发。</p>
+			<img src="../img/xq_img3.jpg" />
+		</div>
+		<div class="xq_img4_wrap">
+			<div class="xq_img4 xq_img2">
+				<h4>产品综述</h4>
+				<p>开发者版本是特殊限定版本，专为有意从事 Microsoft HoloLens 应用开发的开发者用户提供，使用场景必须与产品应用开发相关。与商业套件相比，为了帮助降低开发成本，开发者版本提供了优惠的价格方案，但同时也相应减少了相关的服务内容。
+					<a href="https://www.microsoft.com/zh-cn/hololens">了解更多</a>
+				</p>
+			</div>
+		</div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="xq_img5 louti">
+			<img src="../img/xq_img5.jpg" />
+			<div class="img5_textcontent">
+				<h4>硬件设备包装清单</h4>
+				<p>• Microsoft HoloLens 开发者版本 硬件设备</p>
+				<p>• Clicker </p>
+				<p>• 便携包</p>
+				<p>• 超细纤维清洁布</p>
+				<p>• 充电器</p>
+				<p>• 充电器</p>
+			</div>
+		</div>
+		<div id="xq_mainContainer" class="louti">
+			<div class="xq_title">
+				技术规格
+			</div>
+			<ul>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>光学部件</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								透视全息透镜（波导）<br /> 
+								2个HD 16：9 光引擎<br /> 
+								自动瞳距校准<br /> 
+								全息分辨率：最高 230 万光学点<br />
+							        全息密度：>2.5k 弧度（每弧度光点）<br />
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>传感器</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								1个 IMU<br /> 
+								4个环境感知摄像头<br /> 
+								1个深度摄像头<br /> 
+								1个2MP照片/HD视频摄像头<br /> 
+								混合现实捕获<br /> 
+								4个麦克风<br /> 
+								1个环境光传感器<br /> 
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>人体感知</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								立体声效<br /> 
+								视线跟踪<br /> 
+								手势输入<br /> 
+								语音支持<br /> 
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>输入/输出/连接</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								内置扬声器<br /> 
+								3.5mm 音频插孔<br /> 
+								音量调高/调低按钮<br /> 
+								亮度调高/调低按钮<br /> 
+								电源按钮<br /> 
+								电池状态指示灯<br /> 
+								Wi-Fi 802.11ac<br /> 
+								Micro USB 2.0<br /> 
+								电缆<br /> 
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>处理器</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								Intel 32 位体系结构<br /> 
+								定制的 Microsoft 全息处理单元（HPU 1.0）
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>电源</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								电池使用时间（视具体使用情况可能有所差异）:<br /> 
+								• 最长2-3 小时的有效使用时间<br /> 
+								• 最长 2 周待机时间<br /> 
+								• 充电时功能齐全<br /> 
+								被动式散热系统（无风扇）
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>内存</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								64GB 闪存<br />
+								2GB RAM（2GB CPU 和 1GB HPU）		
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>重量</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								579g
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>操作系统和应用</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								Windows 10<br />
+								Windows 应用商店
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="xq_title_name">
+						<div class="xq_inner">
+							<span>开发和需求的准备</span>
+						</div>
+					</div>
+					<div class="xq_title_con">
+						<div class="xq_inner">
+							<span>
+								可以运行 Visual Studio 2015 和 Unity 5.4 的 Windows 10 PC<br />
+								请访问以下地址，了解有关设计和开发 HoloLens 应用的更多信息：<br />
+							<a href="https://www.microsoft.com/zh-cn/hololens/developers">https://www.microsoft.com/zh-cn/hololens/developers</a>	
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div class="kongbai"></div>
+		<div id="xq_questions" class="louti">
+			<div class="xq_title">
+				常见问题
+			</div>
+			<div class="xq_questions_cons">
+				<div class="part">
+					<h5>感谢您对Microsoft HoloLens 商业套件的关注，我们总结了一些常见问题，以便于您更好的了解相关产品细节。</h5>
+				</div>
+				<div class="part">
+					<div class="q">
+						1. 什么是 Microsoft HoloLens？它是如何工作的？
+					</div>
+					<div class="a">
+						答：Microsoft HoloLens 是微软第一个完全独立的、运行 Windows 10 的全息计算机设备。它完全无线（没有电线），无需连接到手机或 PC。Microsoft HoloLens 可将全息影像置于物理环境当中，让你从一个全新的视角观察这个世界。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						2. 什么是全息影像？
+					</div>
+					<div class="a">
+						答：全息影像是一个物体的三维影像，与真实世界的物体类似，唯一的区别在于：全息影像由光组成而不是由物质组成的。与实际物体一样，也可以从不同的角度和距离观察全息物体，但是当触摸或推动全息物体时，它不会有任何物理阻力，因为它们是虚幻的。全息影像可以是二维的，像是一张纸或一个电视屏幕一样；也可以是三维的，像是真实世界中的其他实际物体一样。通过 Microsoft HoloLens 看到的全息影像将相当逼真，你可以移动它，改变它的形状，并可随着你的交互方式或所看到的物理环境改变而变化。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						3. 在 Windows 10 上支持全息影像将意味着什么？
+					</div>
+					<div class="a">
+						Windows 10 是微软首个支持全息计算的平台，使用 API 可在一套独立设备上支持视线、手势、声音和环境理解。在 Windows 10 中，全息影像将作为通用 Windows 平台应用，并且所有通用 Windows 应用均可作为全息影像来运行。Windows 10 中的全息影像将带给我们一种全新的沟通、创造和探索方式。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						4. 如何使用 Microsoft HoloLens 看到与现实世界混合的全息影像？
+					</div>
+					<div class="a">
+						答：Microsoft HoloLens 可以生成让用户看得到的多维图像，这样用户就可以感知在物理世界的全息物体了。使用 Microsoft HoloLens 看到的全息物体可以置于你选定的物理位置上，并可根据其自己的规则进行移动，或保留在特定位置上，无论你在什么位置或哪个方向。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						5. Microsoft HoloLens 为哪类人群带来更多价值？
+					</div>
+					<div class="a">
+						答：我们对 Microsoft HoloLens 将来实现的各种可能性感到非常兴奋。我们相信开发人员、商业组织、设计人员和创作者都会在 Microsoft HoloLens 中找到自己的独特价值。 对于开发人员来说，Microsoft HoloLens 上搭载的 Windows 10 是一个全息平台，可帮助你开发全息计算的未来。构建于 Windows 10 之上的 Microsoft HoloLens 会成为企业变革的一个革命性工具，将转变公司、设计人员和创作者处理三维数据以将产品和信息带到生活中的方式。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						6. 戴眼镜和头饰时是否可佩带 Microsoft HoloLens？
+					</div>
+					<div class="a">
+						答：Microsoft HoloLens 内头环可调节以适应成人头部尺寸和形状，同时也可适应大多数眼镜架，佩戴非常舒适。不过，它的设计不适用于戴帽子和头饰，为了达到最好的使用效果，最好摘下帽子和头饰。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						7. 个人用户是否可以申请购买开发者版本？
+					</div>
+					<div class="a">
+						答：因为开发者版本是专门面向从事 Microsoft HoloLens 应用开发的开发者用户推出的产品，所以不面向个人用户发售。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						8. 开发者版本支持哪种语言？
+					</div>
+					<div class="a">
+						答：做为一款全球通用的产品，目前开发者版本的支持语言为英文。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						9. 开发者版本是否提供退换货？
+					</div>
+					<div class="a">
+						答：开发者版本是特殊限定版本，希望通过优惠的价格方案帮助开发机构降低研发成本。由于在价格优惠的同时减少了相应的服务内容，因此开发者版本不提供任何形式的退换货。
+					</div>
+				</div>
+				<div class="part">
+					<div class="q">
+						10. 开发者版本是否提供保修服务？
+					</div>
+					<div class="a">
+						答：开发者版本是针对专业的开发者用户所提供的特殊限定版本，希望通过优惠的价格方案帮助开发机构降低研发成本。由于在价格优惠的同时减少了相应的服务内容， 因此开发者版本不提供保修服务。如果您对保修服务或企业功能有需求，我们推荐您购买商业套件，这是我们面向商业机构和开发者用户的标准通用产品。
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="xq_comment_wrap">
+			<div id="xq_comment">
+				<div class="comment_container">
+					<h3 class="louti">顾客评价</h3>
+					<p>欢迎分享您对本商品的评价或使用心得！</p>
+					<a href="/p/mic1823/reviewsubmit">发表评价</a>
+				</div>
+				<ul class="xq_comments">
+					<li>
+						<div class="xq_comment_container">
+							<div class="xq_title_box">
+								<p class="xq_tit">看起来不错</p>
+								<img src="../img/stars_2.png" />
+							</div>
+							<p class="xq_content">巨硬爸爸又出新货了，回头带着看B站~~~~~</p>
+							<div class="xq_time">29/08/2017</div>
+						</div>
+					</li>
+					<li>
+						<div class="xq_comment_container">
+							<div class="xq_title_box">
+								<p class="xq_tit">很好很强大的黑科技</p>
+								<img src="../img/stars_2.png" />
+							</div>
+							<p class="xq_content">带上微软HoloLens以后颠覆了对视觉的认知 仿佛虚拟物品触手可及 还能进行各种交互 另外客服人员的服务态度也很好 帮忙解决了不少购买的问题</p>
+							<div class="xq_time">10/08/2017</div>
+						</div>
+					</li>
+					<li>
+						<div class="xq_comment_container">
+							<div class="xq_title_box">
+								<p class="xq_tit">巨硬爸爸又有新玩意了</p>
+								<img src="../img/stars_2.png" />
+							</div>
+							<p class="xq_content">买买买！不用多说</p>
+							<div class="xq_time">03/07/2017</div>
+						</div>
+					</li>
+					<li>
+						<div class="xq_comment_container">
+							<div class="xq_title_box">
+								<p class="xq_tit">~~~~</p>
+								<img src="../img/stars_2.png" />
+							</div>
+							<p class="xq_content">让虚拟和现实完美结合，市场上的低端品无可取代，让我们的实验室更棒了！</p>
+							<div class="xq_time">23/06/2017</div>
+						</div>
+					</li>
+					<li>
+						<div class="xq_comment_container">
+							<div class="xq_title_box">
+								<p class="xq_tit">等的好辛苦！</p>
+								<img src="../img/stars_2.png" />
+							</div>
+							<p class="xq_content">这个设备我已经等了好几年了，从刚开始发布就非常期待，现在终于可以买了！</p>
+							<div class="xq_time">18/06/2017</div>
+						</div>
+					</li>
+				</ul>
+				<div class="xq_pager">
+					<span class="pager_index">1 - 5 / 24</span>
+					<button class="previous page">上一页</button>
+					<button class="next">下一页</button>
+				</div>
+			</div>
+		</div>
+
 		<!-------------------------------------------->
 		<div id="footer-wrap">
 			<div id="footer">
@@ -398,9 +776,10 @@
 		<button id="servers_btn"></button>
 		<button id="Global_ScrollToTop"></button>
 		<!--联系客服-->
-		
+
 	</body>
 	<script src="../js/jquery-1.11.3.js"></script>
-	<script src="../js/index.js"></script>
+	<script src="../js/public.js"></script>
+	<script src="../js/xiangqing.js"></script>
 
 </html>

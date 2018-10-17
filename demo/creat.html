@@ -50,5 +50,22 @@
 		</div>
 	</body>
 	<script src="../js/jquery-1.11.3.js"></script>
-	<script src="../js/index.js"></script>
+	<script type="text/javascript">
+	
+		$(".create_btn_1").click(function() {
+			$(".create_input_1").css("display", "none");
+			$(".create_input_2").css("display", "block");
+			$(".create_input_3").css("display", "none");
+		})
+		$(".create_btn_2").click(function() {
+			$(".create_input_1").css("display", "none");
+			$(".create_input_2").css("display", "none");
+			$(".create_input_3").css("display", "block");
+		})
+		$(".create_btn_3").click(function() {
+			$(".create_input_1").css("display", "block");
+			$(".create_input_2").css("display", "none");
+			$(".create_input_3").css("display", "none");
+		})
+	</script>
 </html>

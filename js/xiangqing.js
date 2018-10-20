@@ -12,17 +12,15 @@ $(".small_pic").find("a").click(function() {
 })
 
 //放大镜
-$(".big_pic").hover(function(){
-	$("#eye").css("display","block");
-	$("#small_box").css("display","block");
-},function(){
-	$("#eye").css("display","none");
-	$("#small_box").css("display","none");
+$(".big_pic").hover(function() {
+	$("#eye").css("display", "block");
+	$("#small_box").css("display", "block");
+}, function() {
+	$("#eye").css("display", "none");
+	$("#small_box").css("display", "none");
 })
 
-
-
-
+fdj(0);
 function fdj(index) {
 	var oBox = document.getElementById('box');
 	var oEye = document.getElementById('eye');
@@ -54,16 +52,6 @@ function fdj(index) {
 	}
 }
 
-//吸顶效果
-$(window).scroll(function() {
-	let sTop = $(window).scrollTop();
-	if(sTop > 717) {
-		$("#stairs").css({"position":"fixed","top":"71px","z-index":"9999"});
-	} else {
-		$("#stairs").css("position", "");
-	}
-
-})
 //图片选项卡效果
 $minbtn = $(".small_pic a");
 $imgs = $(".img");
@@ -71,43 +59,54 @@ $img2s = $(".img2");
 
 var flag = true;
 
-$minbtn.click(function(){
+$minbtn.click(function() {
+    var index = $(this).index();
 	flag = false;
-	var index = $(this).index();
-	$imgs.eq(index).css("z-index","9");
-	$imgs.eq(index).siblings().css("z-index","0");
-	$img2s.eq(index).css("z-index","9");
-	$img2s.eq(index).siblings().css("z-index","0");
+	$imgs.eq(index).css("z-index", "9");
+	$imgs.eq(index).siblings(".img").css("z-index", "0");
+	$img2s.eq(index).css("z-index", "9");
+	$img2s.eq(index).siblings().css("z-index", "0");
 	fdj(index);
 })
 
-//楼梯效果
-	//楼梯号
-	$list = $("#stairs ul li");
-	
-	//所有的楼层
-	$divs = $(".louti");
-	
-	//定义一个变量控制 滚动条代码的执行
-	//假设值为true时  滚动条的代码可以执行
-	var flag = true;
-	//第一步 ：点击左侧的楼层号  根据下标找到对应的楼层
-	$list.click(function(){
-		flag = false;
-		//获取当前操作的楼层号的下标
-		var index = $(this).index();
-		
-		//根据下标查找对应的楼层  并获取给楼层相对于body顶部的距离  obj.offset().top
-		var t = $divs.eq(index).offset().top - 145 + 'px';
-		
-		//设置页面滚走的距离为 t （当前index对应的楼层相对于body距离）
-		$("body,html").animate({ scrollTop:t },1000,function(){
-			//动画完成后 将flag的值重新设置为true  滚动条代码可以被触发
-			flag = true;
+//吸顶效果
+$(window).scroll(function() {
+	let sTop = $(window).scrollTop();
+	if(sTop > 717) {
+		$("#stairs").css({
+			"position": "fixed",
+			"top": "71px",
+			"z-index": "9999"
 		});
-	})
-	
-	
+	} else {
+		$("#stairs").css("position", "");
+	}
 
-	
+})
+//楼梯效果
+//楼梯号
+$list = $("#stairs ul li");
 
+//所有的楼层
+$divs = $(".louti");
+
+//定义一个变量控制 滚动条代码的执行
+//假设值为true时  滚动条的代码可以执行
+var flag = true;
+//第一步 ：点击左侧的楼层号  根据下标找到对应的楼层
+$list.click(function() {
+	flag = false;
+	//获取当前操作的楼层号的下标
+	var index = $(this).index();
+
+	//根据下标查找对应的楼层  并获取给楼层相对于body顶部的距离  obj.offset().top
+	var t = $divs.eq(index).offset().top - 145 + 'px';
+
+	//设置页面滚走的距离为 t （当前index对应的楼层相对于body距离）
+	$("body,html").animate({
+		scrollTop: t
+	}, 1000, function() {
+		//动画完成后 将flag的值重新设置为true  滚动条代码可以被触发
+		flag = true;
+	});
+})

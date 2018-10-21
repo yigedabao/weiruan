@@ -21,6 +21,7 @@ $(".big_pic").hover(function() {
 })
 
 fdj(0);
+
 function fdj(index) {
 	var oBox = document.getElementById('box');
 	var oEye = document.getElementById('eye');
@@ -60,7 +61,7 @@ $img2s = $(".img2");
 var flag = true;
 
 $minbtn.click(function() {
-    var index = $(this).index();
+	var index = $(this).index();
 	flag = false;
 	$imgs.eq(index).css("z-index", "9");
 	$imgs.eq(index).siblings(".img").css("z-index", "0");
@@ -110,3 +111,17 @@ $list.click(function() {
 		flag = true;
 	});
 })
+
+//ajax调取json
+$.ajax({
+	type: "get",
+	url: "../json/xiangqing.json",
+	async: true,
+	success: function(json) {
+		var conStr = '';
+		for(var i = 0; i < json.length; i++) {
+			conStr += `<li><div class="xq_comment_container"><div class="xq_title_box"><p class="xq_tit">${json[i].name}</p><img src="../img/${json[i].url}" /></div><p class="xq_content">${json[i].main}</p><div class="xq_time">${json[i].time}</div></div></li>`
+			$(".xq_comments").html(conStr)
+		}
+	}
+});

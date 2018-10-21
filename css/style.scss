@@ -533,6 +533,33 @@
                 }
             }
         }
+        .create_input_4 {
+            margin-top: 8px;
+            display: none;
+            #pwd {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid black;
+                line-height: 30px;
+            }
+            #pwds{
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid black;
+                line-height: 30px;
+            }
+            .denglu{
+            width: 108px;
+            height: 32px;
+            text-align: center;
+            color: white;
+            background: #005da6;
+            border: none;
+            position: absolute;
+            right: 44px;
+            bottom: 44px;   
+            }
+        }
         .next {
             width: 108px;
             height: 32px;
@@ -547,7 +574,7 @@
     }
 }
 
-
+ 
 /*==============xiangqingye======================*/
 
 #current_pos_wrap {
@@ -583,14 +610,14 @@
             width: 500px;
             height: 330px;
             position: relative;
-            #mark{
+            #mark {
                 width: 100%;
                 height: 100%;
                 opacity: 0;
                 position: absolute;
                 z-index: 100;
             }
-            #small_box{
+            #small_box {
                 width: 100px;
                 height: 100px;
                 border: 1px solid;
@@ -608,17 +635,17 @@
                 background: white;
             }
         }
-        #eye{
+        #eye {
             width: 500px;
             height: 330px;
             border: 1px solid black;
             position: absolute;
-            top:15px;
+            top: 15px;
             overflow: hidden;
             left: 500px;
             z-index: 10;
             display: none;
-            img{
+            img {
                 width: 300%;
                 height: 300%;
                 position: absolute;
@@ -748,11 +775,12 @@
         }
     }
 }
-#stairs_wrap{
+
+#stairs_wrap {
     width: 100%;
     height: 72px;
-
 }
+
 #stairs {
     width: 100%;
     background: rgba(255, 255, 255, 0.7);
@@ -1069,6 +1097,149 @@
             margin-top: 7px;
             line-height: 35px;
             margin-right: 10px;
+        }
+    }
+}
+
+
+/*==============liebiaoye======================*/
+
+#lb_banner {
+    @include common(425px);
+    img {
+        @include common(425px);
+        display: block;
+    }
+}
+
+#lb_banner_top {
+    @include common(100%);
+    overflow: hidden;
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 32%;
+            height: 372px;
+            box-sizing: border-box;
+            padding: 0 16px 20px;
+            display: inline-block;
+            background: #f5f5f5;
+            margin-bottom: 50px;
+            a {
+                h3 {
+                    font-size: 30px;
+                    color: #333;
+                    font-weight: normal;
+                    line-height: 54px;
+                }
+                img {
+                    width: 338px;
+                    height: 226px;
+                    display: block;
+                }
+                p {
+                    color: #333;
+                    font-size: 20px;
+                    line-height: 24px;
+                    height: 72px;
+                    overflow: hidden;
+                    span {
+                        display: inline-block;
+                        color: #007adb;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lb_main {
+    @include common(100%);
+    .headline {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            display: inline-block;
+            width: 25%;
+            border: 1px solid #cccccc;
+            padding: 26px 10px 4px;
+            position: relative;
+            margin-bottom: -1px;
+            box-sizing: border-box;
+            a {
+                img {
+                    width: 261px;
+                    height: 172px;
+                    display: block;
+                }
+                .box {
+                    height: 162px;
+                    h3 {
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #333;
+                        padding-bottom: 9px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #333;
+                    }
+                }
+                span {
+                    font-size: 20px;
+                    line-height: 1.5em;
+                    color: #ec5412;
+                }
+                .lb_star {
+                    height: 30px;
+                    img {
+                        width: 120px;
+                        height: 20px;
+                        background: red;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+                    i {
+                        font-style: inherit;
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#lb_bottom {
+    @include common(413px);
+    margin: 70px auto;
+    h1 {
+        font-size: 20px;
+        line-height: 30px;
+        color: #1a1a1a;
+    }
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        color: #1a1a1a;
+    }
+    ul {
+        li {
+            font-size: 16px;
+            line-height: 24px;
+            color: #1a1a1a;
+            a {
+                color: #0067b8;
+            }
         }
     }
 }

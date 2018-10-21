@@ -20,7 +20,7 @@
 			<div id="create_maddle">
 				<div>
 					<img src="https://account.azureedge.net/images/microsoft_logo_7lyNn7YkjJOP0NwZNw6QvQ2.svg" />
-					<h2>创建账户</h1>
+					<h2>创建账户</h2>
 					<div class="create_input_1">
 						<input type="text" name="email" id="email" placeholder="someone@example.com" />
 						<a href="#" class="create_btn_1">改为使用电话号码</a>
@@ -28,21 +28,28 @@
 					</div>
 					<div class="create_input_2">
 						<select name="create_telfrom" class="create_telfrom">
-							<option >中国(+86)</option>
+							<option>中国(+86)</option>
 						</select>
 						<input type="text" name="create_tel" id="create_tel" placeholder="电话号码" />
 						<a href="#" class="create_btn_3">改为使用电子邮件</a>
 					</div>
 					<div class="create_input_3">
 						<div class="ci3_border">
-						<input type="text" name="setemail" id="setemail" placeholder="新建电子邮件" />
-						<select name="email_houzhui" class="email_houzhui">
-							<option>@outlook.com</option>
-							<option>@hotmail.com</option>
-						</select>						
-						<a href="#" class="create_btn_1">改为使用电话号码</a>
-						<a href="#" class="create_btn_3">改为使用电子邮件</a>
+							<input type="text" name="setemail" id="setemail" placeholder="新建电子邮件" />
+							<select name="email_houzhui" class="email_houzhui">
+								<option>@outlook.com</option>
+								<option>@hotmail.com</option>
+							</select>
+							<a href="#" class="create_btn_1">改为使用电话号码</a>
+							<a href="#" class="create_btn_3">改为使用电子邮件</a>
 						</div>
+					</div>
+					<div class="create_input_4">
+						<input type="password" name="pwd" id="pwd" placeholder="创建密码" />
+						<input type="password" name="pwds" id="pwds" placeholder="确认密码" />
+						<a href="#" class="create_btn_1">改为使用电话号码</a>
+						<a href="#" class="create_btn_2">获取新的电子邮件地址</a>
+						<button class="denglu">去登录</button>
 					</div>
 					<button class="next">下一步</button>
 				</div>
@@ -50,22 +57,76 @@
 		</div>
 	</body>
 	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/cookie.js"></script>
 	<script type="text/javascript">
-	
 		$(".create_btn_1").click(function() {
 			$(".create_input_1").css("display", "none");
 			$(".create_input_2").css("display", "block");
 			$(".create_input_3").css("display", "none");
+			$(".create_input_4").css("display", "none");
 		})
 		$(".create_btn_2").click(function() {
 			$(".create_input_1").css("display", "none");
 			$(".create_input_2").css("display", "none");
 			$(".create_input_3").css("display", "block");
+			$(".create_input_4").css("display", "none");
 		})
 		$(".create_btn_3").click(function() {
 			$(".create_input_1").css("display", "block");
 			$(".create_input_2").css("display", "none");
 			$(".create_input_3").css("display", "none");
+			$(".create_input_4").css("display", "none");
 		})
+
+		$(".next").click(function() {
+			var z = /^\w+@\w+\.[a-z]{2,3}(\.[a-z]{2,3})?$/;
+			var val = $("#email").val();
+			if(z.test(val)) {
+				$("h2").html("密码");
+				$(".create_input_4").css("display", "block");
+				$(".create_input_1").css("display", "none");
+				$(".create_input_2").css("display", "none");
+				$(".create_input_3").css("display", "none");
+				$(".next").css("display", "none");
+			} else {
+				alert("格式错误");
+			}
+		})
+		$(".denglu").click(function() {
+			var z = /^\w{6,18}$/;
+			var val = $("#pwd").val();
+			var val2 = $("#pwds").val();
+			if(z.test(val) && val == val2) {
+				fn();
+				alert("账号创建成功");
+				location.href = "../login.html";
+			} else {
+				alert("格式错误");
+			}
+		})
+
+
+		function fn() {
+			var arr = [];
+			var flag = true;
+			var json = {
+				"uemail": $("#email").val(),
+				"upwd": $("#pwd").val(),
+			}
+			var brr = getCookie("xinxi");
+			if(brr.length != 0) {
+				arr = brr;
+				for(var i = 0; i < arr.length; i++) {		
+						arr[i].count++;
+						flag = false;
+						break;
+				}
+			}
+			if(flag) {
+				arr.push(json);
+			}
+			setCookie("xinxi", JSON.stringify(arr));
+		}
 	</script>
+
 </html>

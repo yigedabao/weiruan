@@ -277,7 +277,7 @@ a {
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 border-top: none;
                 display: none; //一会记得删!!
-                z-index: 99;
+                z-index: 9999;
                 li {
                     @include common(54px,
                     248px);
@@ -306,7 +306,7 @@ a {
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 border-top: none;
                 display: none; //一会记得删!!
-                z-index: 99;
+                z-index: 9999;
                 li {
                     @include common(54px,
                     248px);
